@@ -31,7 +31,7 @@ public class EducationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_education);
-        recyclerView = findViewById(R.id.news_rv);
+        recyclerView = findViewById(R.id.education_rv);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, true);
         linearLayoutManager.setStackFromEnd(true);

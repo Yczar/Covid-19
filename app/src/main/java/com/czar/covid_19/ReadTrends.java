@@ -15,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class ReadNewsActivity extends AppCompatActivity {
+public class ReadTrends extends AppCompatActivity {
     private  String postid;
     private ImageView post_image;
     private TextView post_title, post_description, post_body;
@@ -24,14 +24,14 @@ public class ReadNewsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_news);
+        setContentView(R.layout.activity_read_trends);
         postid = getIntent().getStringExtra("postid");
         post_image = findViewById(R.id.postimage);
         post_body = findViewById(R.id.text_body);
         post_title = findViewById(R.id.post_title);
         post_description = findViewById(R.id.post_description);
 
-        reference = FirebaseDatabase.getInstance().getReference("News").child(postid);
+        reference = FirebaseDatabase.getInstance().getReference("Posts").child(postid);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -48,5 +48,6 @@ public class ReadNewsActivity extends AppCompatActivity {
 
             }
         });
+
     }
 }

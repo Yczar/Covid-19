@@ -89,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
     public void trending(View view) {
         startActivity(new Intent(MainActivity.this, TrendingActivity.class));
     }
+
+    public void Education(View view) {
+        startActivity(new Intent(MainActivity.this, EducationActivity.class));
+    }
 //        recyclerView = findViewById(R.id.trending_rv);
 //        recyclerView.setHasFixedSize(true);
 //        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this);

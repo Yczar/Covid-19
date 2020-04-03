@@ -3,13 +3,24 @@ package com.czar.covid_19.Models;
 public class EducationModel {
 
     String image;
+
+    public String getPostid() {
+        return postid;
+    }
+
+    public void setPostid(String postid) {
+        this.postid = postid;
+    }
+
+    String postid;
     String title, description;
 
     public EducationModel() {
     }
 
-    public EducationModel(String image, String title, String description) {
+    public EducationModel(String image, String title, String description, String postid) {
         this.image = image;
+        this.postid = postid;
         this.title = title;
         this.description = description;
     }

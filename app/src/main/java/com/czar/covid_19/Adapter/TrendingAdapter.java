@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 import com.czar.covid_19.Models.TrendingModel;
 import com.czar.covid_19.R;
 import com.czar.covid_19.ReadNewsActivity;
+import com.czar.covid_19.ReadTrends;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -55,7 +56,7 @@ public class TrendingAdapter extends RecyclerView.Adapter<TrendingAdapter.ViewHo
             public void onClick(View v) {
                 String postid = trendingModel.getPostid();
 
-                Intent intent = new Intent(mContext, ReadNewsActivity.class);
+                Intent intent = new Intent(mContext, ReadTrends.class);
                 intent.putExtra("postid", postid);
                 mContext.startActivity(intent);
             }

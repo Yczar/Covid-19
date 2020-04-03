@@ -142,6 +142,7 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginLeft="12dp"
                     android:gravity="center"
+                    android:onClick="Education"
                     android:orientation="vertical"
                     android:id="@+id/lin_education"
                     android:background="@drawable/education_bg"
