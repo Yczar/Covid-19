@@ -3,14 +3,26 @@ package com.czar.covid_19.Models;
 public class NewsModel {
 
     String image;
-    String title, description;
+    String title;
+    String description;
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    String body;
 
     public NewsModel() {
     }
 
-    public NewsModel(String image, String title, String description) {
+    public NewsModel(String image, String title, String description, String body) {
         this.image = image;
         this.title = title;
+        this.body = body;
         this.description = description;
     }
 
