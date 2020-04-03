@@ -63,11 +63,12 @@
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:textColor="#000000"
-                    android:text="Coronavirus test"/>
+                    android:text="Coronavirus Info"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="lorem ipsum is imply a dummy text of the pricing and typesetting industry"/>
+                    android:textSize="12sp"
+                    android:text="Check out everything you need to know about corona virus"/>
             </LinearLayout>
 
             <ImageView
