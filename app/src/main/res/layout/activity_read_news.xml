@@ -18,7 +18,7 @@
         android:background="#FFF" >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/postimage"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
@@ -28,7 +28,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignBottom="@+id/postimage"
             android:layout_alignParentLeft="true"
             android:background="#7000"
             android:orientation="vertical"
@@ -40,6 +40,7 @@
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/prompt_bold"
                 android:shadowColor="#000"
+                android:id="@+id/post_title"
                 android:shadowDx="3"
                 android:shadowDy="3"
                 android:shadowRadius="6"
@@ -52,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
+                android:id="@+id/post_description"
                 android:text="A guide to applying styles and themes to Android apps"
                 android:textColor="#CCC"
                 android:textSize="12sp" />
@@ -64,7 +66,7 @@
         android:layout_marginLeft="7dp"
         android:layout_marginTop="7dp"
         android:fontFamily="@font/cardo_bold"
-        android:text="Get updated:" />
+        android:text="Stay updated:" />
 
     <LinearLayout
         android:layout_width="match_parent"

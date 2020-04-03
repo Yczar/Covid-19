@@ -2,15 +2,24 @@ package com.czar.covid_19.Models;
 
 public class NewsModel {
 
-    String image;
+    String image, postid;
     String title, description;
+
+    public String getPostid() {
+        return postid;
+    }
+
+    public void setPostid(String postid) {
+        this.postid = postid;
+    }
 
     public NewsModel() {
     }
 
-    public NewsModel(String image, String title, String description) {
+    public NewsModel(String image, String title, String description, String postid) {
         this.image = image;
         this.title = title;
+        this.postid = postid;
         this.description = description;
     }
 
